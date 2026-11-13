@@ -1,0 +1,19 @@
+# Dependencies
+node_modules
+
+# SvelteKit generated files
+.svelte-kit
+
+# Build output
+build
+dist
+
+# Git
+.git
+
+# VS Code settings
+.vscode
+
+# Environment files
+.env
+.env.*

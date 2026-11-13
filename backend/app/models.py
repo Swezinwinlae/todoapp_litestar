@@ -1,7 +1,7 @@
 from sqlalchemy import String, Integer, Boolean, Enum
 from sqlalchemy.orm import Mapped, mapped_column
 
-from database import Base
+from app.database import Base
 
 class Todo(Base):
     __tablename__ = "todos"

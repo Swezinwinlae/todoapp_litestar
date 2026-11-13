@@ -1,11 +1,11 @@
 
-from database import Base, engine, async_session
+from app.database import Base, engine, async_session
 from litestar import Litestar, get, post, patch, delete
 from litestar.exceptions import NotFoundException
 from litestar.config.cors import CORSConfig
 from sqlalchemy import select, delete as sql_delete
-from models import Todo
-from schemas import TodoSchema, UpdateTodoSchema
+from app.models import Todo
+from app.schemas import TodoSchema, UpdateTodoSchema
 
 cors_config = CORSConfig(
     allow_origins=["http://localhost:5173"],
