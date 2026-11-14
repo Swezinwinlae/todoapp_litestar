@@ -2,7 +2,7 @@ import axios from "axios";
 import type { Todo, NewTodo, UpdateTodo, Filter } from "../types";
 
 const api = axios.create({
-  baseURL: "http://localhost:8001",
+  baseURL: "http://localhost:8000",
 });
 
 // Get all todos

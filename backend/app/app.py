@@ -28,7 +28,7 @@ class TodoController(Controller):
             result = await session.execute(
                 select(Todo).order_by(Todo.id)
             )
-            todos = result.scalars().all()
+            todos = result.scalars().all() #
 
             return [
                 {
